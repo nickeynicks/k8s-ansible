@@ -1,9 +1,9 @@
 variable "aws_region" {
-  default = "us-west-2"
+  default = "us-east-2"
 }
 
 variable "key_name" {
-  default = "key24"
+  default = "nicks"
 }
 variable "vpc_cidr" {
   default = "172.0.0.0/24"
@@ -14,7 +14,7 @@ variable "subnets_cidr" {
 }
 variable "availability_zones" {
   type    = list(string)
-  default = ["us-west-2a", "us-west-2b"]
+  default = ["us-east-2a", "us-east-2b"]
 }
 variable "kubernetes_ami" {
   default = "ami-090717c950a5c34d3"
